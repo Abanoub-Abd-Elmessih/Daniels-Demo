@@ -1,0 +1,400 @@
+/* Reset */
+html{
+    scroll-behavior: smooth;
+}
+@font-face{
+    font-family: "Poppins";
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+:root{
+    --main-font:"Montserrat";
+    --secondary-font:"Poppins";
+}
+/* Global Style */
+.main-font{
+    font-family: var(--main-font);
+}
+.fw-800{
+    font-weight: 800;
+}
+.secondary-font{
+    font-family: var(--secondary-font);
+    font-size: 14px;
+}
+.p-color{
+    color: #999;
+}
+.heading-color{
+    color: 
+    rgb(52, 52, 52);
+}
+a{
+    color: inherit;
+}
+/* Start NavBar */
+.nav-link:hover{
+    color: black;
+}
+.nav-link{
+    color: black;
+    position: relative;
+    transition: all 0.5s;
+    display: inline-block;
+}
+.navbar .active{
+    position: relative;
+}
+.navbar .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 2px; 
+    width: 0;
+    background-color: black;
+    transition: width 0.5s; 
+}
+
+.navbar .nav-link.active::after {
+    width: 100%;
+}
+/* End Navbar */
+/* Start Header */
+.main-header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.605), rgba(0, 0, 0, 0.751)) , url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+}
+.main-header li{
+    background-color: #000A11;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+.main-header h1::after {
+    content: " ";
+    height: 100px;
+    font-size: 40px;
+    animation: typing 10s infinite;
+    font-weight: 400;
+    font-family: var(--main-font);
+    font-size: 60px;
+    padding-left: 10px;
+}
+@media (max-width:620px){
+    .main-header h1::after{
+        font-size: 40px;
+    }
+}
+@keyframes typing {
+    0%{
+        content: "|";
+    }
+    1%{
+        content: "|";
+    }
+    2%{
+        content: "|";
+    }
+    3%{
+        content: "D |";
+    }  
+    4%{
+        content: "De |";
+    }
+    5%{
+        content: "Dev |";
+    }
+    6%{
+        content: "Deve |";
+    }
+    7%{
+        content: "Devel |";
+    }
+    8%{
+        content: "Develo |";
+    }
+    9%{
+        content: "Develop |";
+    }
+    10%{
+        content: "Develope |";
+    }
+    11%{
+        content: "Developer |";
+    }
+    12%{
+        content: "Developer |";
+    }
+    13%{
+        content: "Developer |";
+    }
+    14%{
+        content: "Developer |";
+    }
+    15%{
+        content: "Developer |";
+    }
+    16%{
+        content: "Developer |";
+    }
+    17%{
+        content: "Develope |";
+    }
+    18%{
+        content: "Develop |";
+    }
+    19%{
+        content: "Develo |";
+    }
+    20%{
+        content: "Devel |";
+    }
+    21%{
+        content: "Deve |";
+    }
+    22%{
+        content: "Dev |";
+    }
+    23%{
+        content: "D |";
+    }
+    24%{
+        content: "|";
+    }
+    25%{
+        content: "|";
+    }
+    26%{
+        content: "|";
+    }
+    27%{
+        content: "|";
+    }
+    28%{
+        content: "|";
+    }
+    29%{
+        content: "D |";
+    }
+    30%{
+        content: "De |";
+    }
+    31%{
+        content: "Des |";
+    }
+    32%{
+        content: "Desi |";
+    }
+    33%{
+        content: "Desig |";
+    }
+    34%{
+        content: "Design|";
+    }
+    35%{
+        content: "Designe |";
+    }
+    36%{
+        content: "Designer |";
+    }
+    37%{
+        content: "Designer |";
+    }
+    38%{
+        content: "Designer |";
+    }
+    39%{
+        content: "Designer |";
+    }
+    40%{
+        content: "Designer |";
+    }
+    41%{
+        content: "Designer |";
+    }
+    42%{
+        content: "Designe |";
+    }
+    43%{
+        content: "Design |";
+    }
+    44%{
+        content: "Desig |";
+    }
+    45%{
+        content: "Desi |";
+    }
+    46%{
+        content: "Des |";
+    }
+    47%{
+        content: "De |";
+    }
+    48%{
+        content: "D |";
+    }
+    49%{
+        content: "|";
+    }
+    50%{
+        content: "|";
+    }
+    51%{
+        content: "|";
+    }
+    52%{
+        content: "|";
+    }
+    53%{
+        content: "|";
+    }
+    54%{
+        content: "L |";
+    }
+    55%{
+        content: "La |";
+    }
+    56%{
+        content: "Lar |";
+    }
+    57%{
+        content: "Larr |";
+    }
+    58%{
+        content: "Larry |";
+    }
+    59%{
+        content: "Larry D |";
+    }
+    60%{
+        content: "Larry Da |";
+    }
+    61%{
+        content: "Larry Dan |";
+    }
+    62%{
+        content: "Larry Dani |";
+    }
+    63%{
+        content: "Larry Danie |";
+    }
+    64%{
+        content: "Larry Daniel |";
+    }
+    65%{
+        content: "Larry Daniels |";
+    }
+    66%{
+        content: "Larry Daniels |";
+    }
+    67%{
+        content: "Larry Daniels |";
+    }
+    68%{
+        content: "Larry Daniels |";
+    }
+    69%{
+        content: "Larry Daniels |";
+    }
+    70%{
+        content: "Larry Daniels |";
+    }
+    71%{
+        content: "Larry Daniel |";
+    }
+    72%{
+        content: "Larry Danie |";
+    }
+    73%{
+        content: "Larry Dani |";
+    }
+    74%{
+        content: "Larry Dan |";
+    }
+    75%{
+        content: "Larry Da |";
+    }
+    76%{
+        content: "Larry D |";
+    }
+    77%{
+        content: "Larry |";
+    }
+    78%{
+        content: "Larr |";
+    }
+    79%{
+        content: "Lar |";
+    }
+    80%{
+        content: "La |";
+    }
+    81%{
+        content: "L |";
+    }
+    82%{
+        content: "|";
+    }
+    83%{
+        content: "|";
+    }
+    84%{
+        content: "|";
+    }
+    85%{
+        content: "|";
+    }
+    86%{
+        content: "|";
+    }
+    87%{
+        content: "|";
+    }
+    88%{
+        content: "|";
+    }
+    89%{
+        content: "|";
+    }
+    90%{
+        content: "|";
+    }
+    91%{
+        content: "|";
+    }
+    92%{
+        content: "|";
+    }
+    93%{
+        content: "|";
+    }
+    94%{
+        content: "|";
+    }
+    95%{
+        content: "|";
+    }
+    96%{
+        content: "|";
+    }
+    97%{
+        content: "|";
+    }
+    98%{
+        content: "|";
+    }
+    99%{
+        content: "|";
+    }
+    100%{
+        content: "|";
+    }
+  }
+/* End Header */
