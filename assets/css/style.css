@@ -558,3 +558,105 @@ line-height: 22px;
 }
 
 /* End portfolio section */
+/* Start Carousal Section */
+.carousel-item img{
+    width: 100px;
+    } 
+    #carouselExampleIndicators button{
+    text-indent: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #999;
+    transition: all 0.5s;
+    margin-right: 5px;
+    }
+    #carouselExampleIndicators button:hover{
+        background-color: #373737;
+    }
+/* End Carousal Section */
+/* Start TEAM section */
+.team-inner{
+    background-color: #5A5A5A;
+    text-align: center;
+    color: white;
+    border-radius: 8px;
+}
+.team-img{
+    overflow: hidden;
+    cursor: pointer;
+}
+.team-img img{
+    transition: all 0.5s;
+}
+.team-img:hover .team-person{
+    transform: scale(1.2);
+}
+.team-inner .team-layer{
+    position: absolute;
+    inset: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: rotatey(180deg) scale(0);
+    transition: all 0.5s;
+}
+.team-inner:hover .team-layer{
+    opacity: 1;
+    transform: rotatey(0deg) scale(1);
+    cursor: pointer;
+}
+.team-inner .team-layer li{
+    width: 35px;
+    height: 35px;
+    background-color: #000A11;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.team-inner .team-layer li:hover{
+    background-color: white;
+    border: 1px solid #000A11;
+    color: #000A11;
+}
+/* End TEAM section */
+/* Start contact section */
+.contact-icon{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    font-size: 25px;
+    background-color: #F7F7F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+.contact-item:hover .contact-icon{
+    background-color: #000A11;
+    color: white;
+}
+.contact input , textarea{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+.contact button{
+    transition: all 0.5s;
+}
+.contact button:hover{
+    background-color: white;
+    border: #000A11 1px solid;
+    color: #000A11;
+}
+/* End contact section */
+/* Footer */
+.main-footer{
+    background-color: #1C1C1C;
+}
